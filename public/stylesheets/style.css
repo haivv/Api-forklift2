@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.logo-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+
+  width: 100%;
+  padding: 30px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.home {
+  float: right;
+}
+
+.home img {
+  height: 40px;
+}
+
+
+.main {
+  width: 711px;
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  /* 100% chiều cao của viewport */
+}
+
+.main-box{
+  width: 438px;
+}
+
+#btnHome {
+  font-weight: bold;
+  float: right;
+}
+
+#btnHome img {
+  width: 40px;
+}
+.home a{
+  color: black;
+  font-weight: 600;
+}
+
+
+.title{
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.btnSize{
+  width: 438px;
+  height: 64px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.btnDark {
+  color: #7A7A7A;
+  padding-left: 20px;
+  border: 1px solid #D0D0D0;
+}
+
+.btnWhite a{
+  color: white;
+  
+  
+}
+
+#btnLogout{
+  width: 102px;
+  border: none;
+  background: none;
+  padding: 0px 15px;
+}
+#username,#useremail,#txtcode,
+#password {
+  
+  border: 1px solid rgba(137, 137, 137, 0.3);
+}
+
+.error {
+  color: #F65633;
+}
+
+.txtCenter{
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #1d1d1d;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+/* mess */
+.messBox {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* opacity: 0.5; */
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modalmess-content {
+  opacity: 1;
+  font-size: 21px;
+  width: 714px;
+  min-height: 200px;
+  background: rgb(252, 252, 252);
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 10px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  color: black;
+}
+
+/* comment */
+.modalcomment-content {
+  opacity: 1;
+  width: 70%;
+  height: 80%;
+  background: rgb(252, 252, 252);
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 10px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+
+
+}
+.btnConfirm{
+  width: 138px !important;
+  height: 48px !important;
+  background: black;
+  color: white;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px !important;
+  line-height: 48px !important;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+.btnCancel{
+  width: 138px;
+  height: 48px;
+  background: black;
+  color: white;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 48px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.messBox a{
+  color: white;
+  text-decoration: none;
+}
+.messBox a:hover{
+  color: white;
+}
+
+
+
+.txtMess{
+  font-size: 21.33px;
+}

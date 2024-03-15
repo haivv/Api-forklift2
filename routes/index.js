@@ -24,8 +24,8 @@ router.get('/', function (req, res, next) {
 
 
 router.post('/check-login', function (req, res, next) {
-  const username = req.body.txtuser;
-  const password = req.body.txtpass;
+  const username = req.body.username;
+  const password = req.body.password;
   const new_password = crypto.createHash('md5').update(password).digest('hex');
   const query = `SELECT * FROM account WHERE username="${username}" AND password="${new_password}"`;
 
